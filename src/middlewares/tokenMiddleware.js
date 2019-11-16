@@ -7,6 +7,7 @@ import statusCode from '../utils/statusCode';
 
 dotenv.config();
 
+
 const jwtSecret = process.env.JWT_SECRET;
 
 // This function generates a token

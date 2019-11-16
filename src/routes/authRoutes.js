@@ -11,7 +11,7 @@ const {
 } = authControllers;
 const { validateLogin, validateSignup, validateResult } = authValidator;
 
-route.post('/auth/signup', signup);
+route.post('/auth/signup', validateSignup, validateResult, signup);
 route.post('/auth/login', validateLogin, validateResult, login);
 
 export default route;

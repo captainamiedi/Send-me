@@ -1,4 +1,5 @@
 export default {
+  approveSuccess: 'update successful',
   noEmail: 'email is required',
   invalidEmail: 'email is not valid',
   incorrectPassword: 'password is invalid',

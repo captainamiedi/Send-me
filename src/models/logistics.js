@@ -12,10 +12,10 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     logistics.belongsTo(models.users, {
       foreignKey: 'user_id',
-      as: 'author',
+      as: 'users',
     });
 
-    logistics.belongsTo(models.orders, {
+    logistics.hasMany(models.orders, {
       foreignKey: 'order_id',
       as: 'order',
     });

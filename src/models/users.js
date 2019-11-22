@@ -22,6 +22,11 @@ module.exports = (sequelize, DataTypes) => {
       as: 'logistics',
       onDelete: 'CASCADE',
     });
+    users.hasMany(models.comments, {
+      foreignKey: 'user_id',
+      as: 'comments',
+      onDelete: 'CASCADE',
+    });
     users.beforeCreate((incomingUser) => {
       incomingUser.password = hashSync(incomingUser.password, salt);
     });

@@ -2,6 +2,7 @@ export default {
   noEmail: 'email is required',
   invalidEmail: 'email is not valid',
   incorrectPassword: 'password is invalid',
+  orderSuccess: 'order successfully completed',
   shortPassword: 'character must be 8',
   noDigitInPassword: 'password must contain numbrs',
   emptyFirstname: 'first name is required',

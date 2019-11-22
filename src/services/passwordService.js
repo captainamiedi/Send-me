@@ -28,7 +28,7 @@ const queryById = async (id) => {
 
 const updatePassword = async (hash, id) => {
   try {
-    return await users.update({ password: hash}, { where: { id } });
+    return await users.update({ password: hash }, { where: { id } });
   } catch (err) {
     throw err;
   }

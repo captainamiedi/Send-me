@@ -5,8 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.TEXT,
     destination: DataTypes.TEXT,
     departure: DataTypes.TEXT,
-    weight: DataTypes.INTEGER,
-    paymwnt_amount: DataTypes.INTEGER,
+    weight: DataTypes.STRING,
+    payment_amount: DataTypes.INTEGER,
     service_fee: DataTypes.INTEGER,
     order_status: DataTypes.STRING,
   }, {});
@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
 
     orders.belongsTo(models.users, {
       foreignKey: 'user_id',
-      as: 'author',
+      as: 'user',
       onDelete: 'CASCADE',
     });
   };

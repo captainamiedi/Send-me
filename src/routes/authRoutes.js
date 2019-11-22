@@ -1,9 +1,10 @@
 import { Router } from 'express';
 
-import {SendPasswordResetMail,receiveNewPassword} from authControllers from '../controllers/AuthController';
+import authControllers, { SendPasswordResetMail, receiveNewPassword } from '../controllers/AuthController';
 import { getToken, verifyToken } from '../middlewares/tokenMiddleware';
 import authValidator from '../validation/authValiations';
-
+// eslint-disable-next-line import/no-duplicates
+// import authControllers from '../controllers/AuthController';
 
 
 const route = Router();

@@ -7,13 +7,9 @@ const { users } = models;
 
 export const signup = async (userObj) => {
   try {
-    // console.log(userObj, 'servoice');
-    // console.log(users, 'types');
     const userRes = await users.create(userObj);
-    // console.log(userRes, 'auth.....');
     return userRes;
   } catch (err) {
-    console.log(err, 'signup error');
     throw err;
   }
 };

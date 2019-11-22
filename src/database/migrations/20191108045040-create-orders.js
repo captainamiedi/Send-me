@@ -21,9 +21,9 @@ module.exports = {
       type: Sequelize.TEXT,
     },
     weight: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.STRING,
     },
-    paymwnt_amount: {
+    payment_amount: {
       type: Sequelize.INTEGER,
     },
     service_fee: {
